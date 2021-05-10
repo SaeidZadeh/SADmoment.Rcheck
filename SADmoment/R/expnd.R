@@ -1,0 +1,21 @@
+expnd <-
+function(u,n)
+{
+	if(n==0)
+	{
+		m<-max(u[2,]);
+		t<-0:m
+		s<-matrix(data=0,nrow=2,ncol=(m+1));
+		s[2,]<-t
+		s[1,(u[2,]+1)]<-u[1,]
+	}
+	if(n>0)
+	{
+		m<-n;
+		t<-0:m
+		s<-matrix(data=0,nrow=2,ncol=(m+1));
+		s[2,]<-t
+		s[1,(u[2,]+1)]<-u[1,]
+	}
+	return(s);
+}

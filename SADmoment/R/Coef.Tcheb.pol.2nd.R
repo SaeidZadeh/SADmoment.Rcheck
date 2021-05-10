@@ -1,0 +1,33 @@
+Coef.Tcheb.pol.2nd <-
+function(N,no.m)
+{
+	s<-matrix(data=0,nrow=no.m,ncol=no.m)
+	u1<-matrix(data=0,nrow=2,ncol=1)
+	u1[1,1]<-1/sqrt(N);
+	s[1,1]<-u1[1,1];
+	if(no.m==1) 
+		return(s)
+	u2<-matrix(data=0,nrow=2,ncol=2)
+	u2[2,2]<-1
+	u2[1,1]<-(1-N)/sqrt(N*(N^2-1)/3);
+	u2[1,2]<-2/sqrt(N*(N^2-1)/3);
+	if(no.m==2)
+	{
+		s[2,]<-u2[1,]
+		return(s)
+	}
+	u3<-expnd(u2,no.m-1)
+	s[2,]<-u3[1,]
+	for(i in 2:(no.m-1))
+	{
+		al1<-(2/i)*sqrt((4*i^2-1)/(N^2-i^2));
+		al2<-((1-N)/i)*sqrt((4*i^2-1)/(N^2-i^2));
+		al3<-((i-1)/i)*sqrt((2*i+1)/(2*i-3))*sqrt((N^2-(i-1)^2)/(N^2-i^2));
+		u3<-summ(summ(xmul(cmul(u2,al1)),cmul(u2,al2)),cmul(u1,-1*al3));
+		u1<-u2;
+		u2<-u3
+		u3<-expnd(u3,no.m-1)
+		s[i+1,]<-u3[1,];
+	}
+	return(s);
+}

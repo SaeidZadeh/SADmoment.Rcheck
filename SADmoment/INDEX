@@ -1,0 +1,65 @@
+BellB                   Bell function
+Coef.Tcheb.pol.2nd      Coefficients of the Tchebychev polynomials up
+                        to a certain degree
+Dist_Moment             Moments of the most common fitting
+                        distributions
+LLfun                   Parameters of the best fitting distribution
+LNmom                   Moments of log-normal
+LSmom                   Moments of the log-series distribution.
+M1                      M1, theoretical average
+PGmom                   Moments of the Poisson Gamma
+PLNmom                  Moments of the Poisson log-normal distribution.
+SAD_Moment              Extrapolate Species Abundance Distribution
+SADmoment-package       Extrapolate SAD and calculate parameters of
+                        best fitting distribution for subareas with
+                        several others
+Tcheb.pol.2nd           Values of Tchebychev polynomials up to certain
+                        degree at each bin.
+alffinder               Parameter alpha in the fitting with a Gamma
+                        distribution
+bet.f                   bet.f
+betfinder               Parameter beta in the fitting with a Gamma
+                        distribution
+calcalpha               Logseries parameter
+cmoment                 moment calculator, first step in the
+                        Log-Normal, values need to be transformed
+cmul                    symbolic constant multiplication
+data_read               get values from keyboard for future use.
+datfun                  average number of species and individuals
+dbfact                  double factorial
+expnd                   symbolic expansion
+extpfun                 extrapolation of moments across scales
+extrapolation.dist      extrapolate distribution moments across scales
+extrapolation.raw       extrapolate raw moments across scales
+f                       individuals in a given positions
+fg                      list of number individuals of all species
+fo                      fo
+fprime                  first derivative of funtion fo, as a part of
+                        the function calculate the parameter of
+                        log-series
+manage_data             data across scales, number of individuals of
+                        species across scales
+mmoment                 first step for finding moment of Possion-Gamma,
+                        the values needed to be transformed
+mo2nd                   2nd moment across scales
+moment1                 moment of log-series number of individuals are
+                        not log-transformed
+momfun                  raw, distribution, and linear moments
+mufinderLN              mean finder for the Log-Normal
+mufinderPLN             mean finder for the Poisson log-normal
+numsum                  weighted sum
+provide_info            provide some info
+ptransform              polylog transformation
+r.mom                   raw moments
+relpwave                wave function
+ro.c.z                  parameter finder
+shrt                    Symbolic shortenning
+sigfinderLN             standard deviation finder for Log Normal across
+                        scales
+sigfinderPLN            standard deviation finder for Poisson Log
+                        Normal across scales
+smom                    Log-normal moments
+st2k                    Sterling number of second kind
+summ                    symbolic addition
+tn                      Thecbychev polynomials recursive formula
+xmul                    symbolic multiplication

@@ -1,0 +1,13 @@
+Package: SADmoment
+Type: Package
+Title: Extrapolate SAD and calculate parameters of best fitting
+        distribution for subareas with several others
+Version: 1.2
+Date: 2019-05-14
+Author: Saeid Alirezazadeh
+Maintainer: Saeid Alirezazadeh <saeid.alirezazadeh@gmail.com>
+Description: Extrapolation of SAD and finding parameters of the best fitting distribution for sub-areas from the study of moments across scales. Moments of fitting distributions across scales by only using their parameters across scales.
+Depends: copula, BB, stats4, VGAM, sads, bbmle, poilog, splines, BBmisc
+License: GPL (>= 2)
+LazyData: true
+Built: R 3.5.2; ; 2019-07-22 13:57:36 UTC; unix
